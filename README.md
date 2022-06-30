@@ -43,6 +43,18 @@
             CUSTOM_BACKEND_SERVER_EVENTS: http://host.docker.internal:4000/events
             ```
 
+   1. Add example backend server as a service
+
+      ```yaml
+      backend-server:
+        image: arjunyelhasura/hasuracon-intro-workshop-2022:latest
+        ports:
+          - "4000:4000"
+        depends_on:
+          - "graphql-engine"
+        restart: always
+      ```
+
 1. Run the docker containers
 
    ```bash
