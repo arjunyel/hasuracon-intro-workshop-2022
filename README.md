@@ -106,7 +106,15 @@
 
       ```graphql
       type Mutation {
-        registerUser(email: String!): String
+        registerUser(email: String!): RegisteredUser!
+      }
+      ```
+
+   1. The custom type we define
+
+      ```graphql
+      type RegisteredUser {
+        jwt: String!
       }
       ```
 
