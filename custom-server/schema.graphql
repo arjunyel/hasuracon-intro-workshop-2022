@@ -1,0 +1,10 @@
+enum Sentiment {
+  MIXED
+  NEGATIVE
+  NEUTRAL
+  POSITIVE
+}
+
+type Query {
+  sentiment(text: String!): Sentiment
+}

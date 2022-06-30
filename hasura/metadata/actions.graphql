@@ -1,0 +1,10 @@
+type Mutation {
+  registerUser(
+    email: String!
+  ): RegisteredUser!
+}
+
+type RegisteredUser {
+  jwt: String!
+}
+

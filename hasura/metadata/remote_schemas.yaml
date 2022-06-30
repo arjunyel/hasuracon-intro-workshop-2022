@@ -1,0 +1,5 @@
+- name: custom-server
+  definition:
+    url_from_env: CUSTOM_GRAPHQL_SERVER
+    timeout_seconds: 60
+  comment: ""

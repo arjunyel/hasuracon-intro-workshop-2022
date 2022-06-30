@@ -1,0 +1,11 @@
+actions:
+  - name: registerUser
+    definition:
+      kind: synchronous
+      handler: '{{CUSTOM_BACKEND_SERVER}}/register'
+custom_types:
+  enums: []
+  input_objects: []
+  objects:
+    - name: RegisteredUser
+  scalars: []
