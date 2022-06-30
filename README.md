@@ -38,9 +38,9 @@
             ```yaml
             HASURA_GRAPHQL_ADMIN_SECRET: myadminsecretkey
             HASURA_GRAPHQL_JWT_SECRET: '{ "type": "HS256", "key": "this-is-a-generic-HS256-secret-key-and-you-should-really-change-it" }'
-            CUSTOM_GRAPHQL_SERVER: http://host.docker.internal:4000/graphql
-            CUSTOM_BACKEND_SERVER: http://host.docker.internal:4000
-            CUSTOM_BACKEND_SERVER_EVENTS: http://host.docker.internal:4000/events
+            CUSTOM_GRAPHQL_SERVER: http://backend-server:4000/graphql
+            CUSTOM_BACKEND_SERVER: http://backend-server:4000
+            CUSTOM_BACKEND_SERVER_EVENTS: http://backend-server:4000/events
             ```
 
    1. Add example backend server as a service
